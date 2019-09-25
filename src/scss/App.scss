@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  background: black;
+}
+
+.navigation {
+  .container {
+    display: flex;
+    align-items: center;
+    height: 120px;
+    padding: 0 8vw;
+
+    .appointment-bttn {
+      a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 20px;
+        border: 1px solid #fff;
+        padding: 10px 25px;
+        border-radius: 30px;
+
+        &:hover {
+          background: #fff;
+          color: #000;
+        }
+      }
+    }
+
+    .divider {
+      flex: 1;
+    }
+
+    .links {
+      ul {
+        list-style-type: none;
+
+        li {
+          font-size: 18px;
+          color: #fff;
+          cursor: pointer;
+
+          &:hover {
+            text-decoration: overline;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .navigation {
+    .container {
+      .links {
+        position: fixed;
+        background: blue;
+        width: 80vw;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        transform: translateX(100%);
+        transition: transform 0.2s ease-out;
+        z-index: 2;
+
+        ul {
+          text-align: center;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+
+          li {
+            padding: 18px 0;
+          }
+        }
+
+        &.show {
+          transform: translateX(0%);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:769px) {
+  .navigation {
+    .container {
+      .hamburger-toggler {
+        display: none;
+      }
+
+      .links {
+        ul {
+          display: flex;
+
+          li {
+            padding: 0 18px;
+          }
+        }
+      }
+    }
+  }
+}
