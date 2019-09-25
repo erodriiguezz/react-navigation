@@ -12,11 +12,18 @@ class Navigation extends Component {
     }
 
     this.clickHandler = this.clickHandler.bind(this);
+    this.closeDrawer = this.closeDrawer.bind(this);
   }
 
   clickHandler() {
     this.setState({
       clicked: !this.state.clicked
+    });
+  }
+
+  closeDrawer() {
+    this.setState({
+      clicked: false
     });
   }
 
@@ -37,7 +44,7 @@ class Navigation extends Component {
           </div>
           <div className='divider' />
           <div className={classHandler}>
-            <LinksGenerator click={this.clickHandler}/>
+            <LinksGenerator click={this.closeDrawer}/>
           </div>
           <div className='hamburger-toggler'>
             <HamburgerToggler click={this.clickHandler}/>
