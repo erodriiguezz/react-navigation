@@ -10,20 +10,10 @@ body {
     height: 120px;
     padding: 0 8vw;
 
-    .appointment-bttn {
-      a {
-        text-decoration: none;
-        color: #fff;
-        font-size: 20px;
-        border: 1px solid #fff;
-        padding: 10px 25px;
-        border-radius: 30px;
-
-        &:hover {
-          background: #fff;
-          color: #000;
-        }
-      }
+    h3 {
+      color: #fff;
+      margin: 0;
+      font-size: 25px;
     }
 
     .divider {

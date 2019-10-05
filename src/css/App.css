@@ -9,17 +9,10 @@ body {
   height: 120px;
   padding: 0 8vw;
 }
-.navigation .container .appointment-bttn a {
-  text-decoration: none;
+.navigation .container h3 {
   color: #fff;
-  font-size: 20px;
-  border: 1px solid #fff;
-  padding: 10px 25px;
-  border-radius: 30px;
-}
-.navigation .container .appointment-bttn a:hover {
-  background: #fff;
-  color: #000;
+  margin: 0;
+  font-size: 25px;
 }
 .navigation .container .divider {
   flex: 1;
@@ -47,7 +40,6 @@ body {
     transform: translateX(100%);
     transition: transform 0.2s ease-out;
     z-index: 2;
-    opacity: 0;
   }
   .navigation .container .links ul {
     text-align: center;
@@ -61,7 +53,6 @@ body {
   }
   .navigation .container .links.show {
     transform: translateX(0%);
-    opacity: 1;
   }
 }
 @media only screen and (min-width: 769px) {
