@@ -7,7 +7,7 @@
     "mixin-deep": "^2.0.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-scripts": "3.1.2",
+    "react-scripts": "5.0.1",
     "react-scroll": "^1.7.14",
     "set-value": "^3.0.1"
   },
